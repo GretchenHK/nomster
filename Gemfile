@@ -31,6 +31,8 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
 # adding kaminari for pagination
 gem 'kaminari', '~> 0.16.3'
+# creating the form with the SimpleForm gem
+gem 'simple_form'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
