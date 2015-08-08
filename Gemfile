@@ -34,6 +34,7 @@ gem 'sass-rails'
 gem 'kaminari', '~> 0.16.3'
 # creating the form with the SimpleForm gem
 gem 'simple_form'
+gem 'devise', '>= 3.2.4'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
