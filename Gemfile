@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass', '3.3.5.1'
 gem 'sprockets', '2.11.0'
-gem 'sass-rails', 
+gem 'sass-rails' 
 # adding kaminari for pagination
 gem 'kaminari', '~> 0.16.3'
 # creating the form with the SimpleForm gem
