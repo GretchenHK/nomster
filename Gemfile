@@ -40,6 +40,9 @@ gem "geocoder"
 
 gem "figaro", ">= 1.0.0"
 
+# photo uploader
+gem "carrierwave"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

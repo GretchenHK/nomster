@@ -29,6 +29,29 @@
 <% end %>
 
 <br />
+<div class="clear"></div>
+
+
+
+
+
+
+<div>
+	<%= simple_form_for @photo, :url => place_photos_path(@place) do |f| %>
+		<%= f.input :caption %>
+		<%= f.input :photo %>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <%= f.submit "Add a Photo", :class => 'btn btn-primary' %>
+        <% end %>
+ </div>
+
+
+
+
+
+
+
+
 
 <div class="pull-right">
 	<% if current_user && current_user == @place.user%>
