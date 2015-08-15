@@ -20,6 +20,10 @@
 				<b><%= place.comments.last.humanized_rating %></b> -
 			<% end%>
 			<%= place.comments.last.message %>
+		</blockquote>
+		<% if place.photos.last.present? %>
+			<%= image_tag place.photos.last.picture, :class => 'img-responsive' %>
+			<% end %>
 			<small><%= place.comments.last.user.email %></small>
 		</blockquote>
 	</div>
