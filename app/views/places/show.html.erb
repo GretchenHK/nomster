@@ -28,19 +28,6 @@
     <div id="map-canvas"></div>
 <% end %>
 
-<br />
-<br class="clear" />
-<h1 class="text-center">Photos!</h1>
-<br />
-<% @place.photos.each do |photo| %>
-	<div class="col-xs-12 col-sm-6">
-		<%= image_tag photo.picture, :class => 
-'img-responsive' %>
-	</div>
-<% end %>
-
-
-
 
 
 
@@ -73,6 +60,18 @@
 
 
 
+<br class="clr" />
+<h1 class="text-center">Photos!</h1>
+<br />
+<% @place.photos.each do |photo| %>
+    <div class="col-xs-12 col-sm-6">
+		<%= image_tag photo.picture, :class => 'img-responsive' %>
+		<%= photo.caption %>
+	</div>
+<% end %>
+
+
+
 
 
 <!-- Modal -->
@@ -96,6 +95,9 @@
     </div>
   </div>
 </div>
+
+
+
 
 <div class="col-xs-10 col-xs-offset-1">
 	<h1 class="pull-left">Comments</h1>
