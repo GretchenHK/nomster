@@ -13,25 +13,23 @@
 		<small><%= place.user.email %></small>
 	<% end %>
 
-<% if place.comments.present? %>
-	<div class="col-xs-12">
-		<blockquote>
-			<% if place.comments.last.humanized_rating.present? %>
-				<b><%= place.comments.last.humanized_rating %></b> -
-			<% end%>
+	<% if place.comments.present? %>
+		<div class="col-xs-12">
+			<blockquote>
+				<% if place.comments.last.humanized_rating.present? %>
+					<b><%= place.comments.last.humanized_rating %></b> -
+				<% end%>
 			<%= place.comments.last.message %>
-				<small><%= place.comments.last.user.email %></small>
-		</blockquote>
-<% if place.photos.present? %>
-	<div class="col-xs-10 col-xs-offset-1">
-		<%= image_tag place.photos.order("id ASC").last.picture, :class => 'img-responsive' %>
-			<% end %>
-	</div>
-<% end %>
-		
-		</blockquote>
-	</div>
+					<small><%= place.comments.last.user.email %></small>
+			</blockquote>
+	<% end %>
+	<% if place.photos.present? %>
+		<div class="col-xs-10 col-xs-offset-1">
+			<%= image_tag place.photos.order("id ASC").last.picture, :class => 'img-responsive' %>
+	<% end %>
+			</blockquote>
+		</div>
 <% end %>
 </div>
 
-<% end %>
+
