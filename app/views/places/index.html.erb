@@ -44,10 +44,11 @@
 </div>
 <!-- end of Code for Carousel -->
 
-<div class="digg_pagination col-xs-10 col-xs-offset-1">
-
-<%= paginate @places %>
-
+<div class="digg_pagination col-xs-10 col-xs-offset-9">
+ <%= paginate @places %> 
+</div>
+<br/>
+<br/>
 
 <% @places.each do |place| %>
 	<div class="booyah-box col-xs-10 col-xs-offset-1">
