@@ -6,7 +6,7 @@ FactoryGirl.define do
 		end
 
 		password "testy123"
-		password confirmation "testy123"
+		password_confirmation "testy123"
 	end
 
 	factory :comment do	
